@@ -1,0 +1,29 @@
+{
+  "auth_request": {
+    "url": "/v1/auth/token",
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "username": "api_user@example.com",
+      "password": "***ЗАЩИЩЕНО***"
+    }
+  },
+  "orders_request": {
+    "url": "/v1/orders/",
+    "method": "GET",
+    "headers": {
+      "Authorization": "Bearer {access_token}",
+      "Content-Type": "application/json"
+    },
+    "params": {
+      "limit": 10,
+      "offset": 0,
+      "start_date": "2025-01-01",
+      "end_date": "2025-01-31",
+      "service_name": "provider-a"
+    }
+  }
+}
+

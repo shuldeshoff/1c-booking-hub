@@ -1,0 +1,87 @@
+{
+  "auth_response": {
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+    "token_type": "bearer",
+    "expires_in": 3600
+  },
+  "orders_response": {
+    "total_pages": 5,
+    "limit": 10,
+    "offset": 0,
+    "orders": [
+      {
+        "id": 12345,
+        "orderId": "ORD-2025-001",
+        "order": 67890,
+        "service_name": "provider-a",
+        "status": "confirmed",
+        "date": "2025-01-15T10:30:00Z",
+        "firstName": "Иван",
+        "lastName": "Петров",
+        "email": "ivan@example.com",
+        "phone": "+7 (999) 123-45-67",
+        "hotelName": "Отель Пример",
+        "hotelType": "hotel",
+        "hotelId": 111,
+        "address": "ул. Примерная, д. 1",
+        "cityName": "Санкт-Петербург",
+        "countryName": "Россия",
+        "offerCode": "OFFER123",
+        "comment": "Комментарий к заказу",
+        "rooms": [
+          {
+            "serviceId": "SVC-001",
+            "checkIn": "2025-02-10T14:00:00Z",
+            "checkOut": "2025-02-15T12:00:00Z",
+            "paymentRecipient": "agency",
+            "priceDetails": {
+              "clientPrice": {
+                "price": 15000,
+                "net": 14000,
+                "gross": 14500,
+                "currency": "RUB"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": 12346,
+        "orderId": "ORD-2025-002",
+        "order": 67891,
+        "service_name": "provider-b",
+        "status": "pending",
+        "date": "2025-01-16T11:15:00Z",
+        "firstName": "Мария",
+        "lastName": "Сидорова",
+        "email": "maria@example.com",
+        "phone": "+7 (999) 987-65-43",
+        "hotelName": "Гостиница Образец",
+        "hotelType": "hotel",
+        "hotelId": 222,
+        "address": "пр. Тестовый, д. 2",
+        "cityName": "Москва",
+        "countryName": "Россия",
+        "offerCode": "OFFER456",
+        "comment": "",
+        "rooms": [
+          {
+            "serviceId": "SVC-002",
+            "checkIn": "2025-03-01T14:00:00Z",
+            "checkOut": "2025-03-05T12:00:00Z",
+            "paymentRecipient": "hotel",
+            "priceDetails": {
+              "clientPrice": {
+                "price": 25000,
+                "net": 23000,
+                "gross": 24000,
+                "currency": "RUB"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,46 @@
+# .gitignore для проекта 1С
+
+# Файлы конфигурации с чувствительными данными
+*.cfg
+config.xml
+*.env
+
+# Логи
+*.log
+logs/
+
+# Временные файлы 1С
+*.tmp
+*.bak
+~$*
+
+# Файлы с паролями и ключами
+*password*
+*secret*
+*token*
+.env.local
+
+# Файлы баз данных 1С
+*.1CD
+*.dt
+*.cf
+
+# Пользовательские настройки IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS специфичные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Файлы обработки с реальными данными
+*_production.epf
+*_prod.epf
+
+# Бэкапы
+backup/
+*.backup
+
